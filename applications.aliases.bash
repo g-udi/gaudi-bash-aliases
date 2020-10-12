@@ -1,9 +1,8 @@
 cite about-alias
-about-alias 'Aliases to some common desktop applications and editors e.g., git editor, vi, IRC client'
+about-alias 'Aliases to some common desktop applications and editors e.g., editors, vi, IRC client'
 
-# Assign the default editor and Git editor
+# Assign the default editor and IRC client
 export EDITOR="vi";
-export GIT_EDITOR="vi";
 export IRC_CLIENT='irssi'
 
 alias edit="\$EDITOR"
