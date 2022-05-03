@@ -5,3 +5,4 @@ about-alias 'Aliases for the gaudi-bash command (these aliases are automatically
 alias gudi-bash='gaudi-bash'
 alias g-udi-bash='gaudi-bash'
 alias gadi-bash='gaudi-bash'
+alias guadi-bash='gaudi-bash'
