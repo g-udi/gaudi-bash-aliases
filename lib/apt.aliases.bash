@@ -1,5 +1,5 @@
 cite about-alias
-about-alias 'Apt and dpkg aliases for Ubuntu and Debian distros.'
+about-alias 'apt and dpkg aliases for Ubuntu and Debian distros.'
 
 # set apt aliases
 _set_pkg_aliases () {

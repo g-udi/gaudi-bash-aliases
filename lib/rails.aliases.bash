@@ -1,5 +1,5 @@
 cite about-alias
-about-alias 'rails aliases'
+about-alias 'Ruby Rails aliases'
 
 alias r='rails'
 alias rg='rails g'

@@ -1,5 +1,5 @@
 cite about-alias
-about-alias 'ruby bundler'
+about-alias 'Ruby Bundler'
 
 # Bundler Commands
 alias be='bundle exec'

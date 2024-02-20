@@ -1,5 +1,5 @@
 cite about-alias
-about-alias 'yarn package manager aliases'
+about-alias 'Yarn package manager aliases'
 
 # Aliases
 alias ya='yarn'

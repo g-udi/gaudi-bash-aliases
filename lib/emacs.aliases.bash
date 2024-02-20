@@ -1,5 +1,5 @@
 cite about-alias
-about-alias 'emacs editor'
+about-alias 'Emacs editor'
 
 case $OSTYPE in
   linux*)

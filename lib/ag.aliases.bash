@@ -1,5 +1,5 @@
 cite about-alias
-about-alias 'the silver searcher (ag) aliases'
+about-alias 'The Silver Searcher (ag) aliases'
 
 ## Summary for args to less:
 # less(1)

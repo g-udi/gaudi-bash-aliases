@@ -1,5 +1,5 @@
 cite about-alias
-about-alias 'mercurial abbreviations'
+about-alias 'Mercurial abbreviations'
 
 alias hs='hg status'
 alias hsum='hg summary'

@@ -1,5 +1,5 @@
 cite about-alias
-about-alias 'puppet aliases'
+about-alias 'Puppet aliases'
 
 alias pupval="puppet parser validate *.pp"
 alias puplint="puppet-lint *.pp"

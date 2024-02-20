@@ -1,5 +1,5 @@
 cite about-alias
-about-alias 'homebrew abbreviations'
+about-alias 'Homebrew abbreviations'
 
 alias bup='brew update && brew upgrade'
 alias bout='brew outdated'

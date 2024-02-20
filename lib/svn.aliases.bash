@@ -1,5 +1,5 @@
 cite about-alias
-about-alias 'common svn aliases'
+about-alias 'Common svn aliases'
 
 alias svs='svn status'
 alias sa='svn add'

@@ -1,5 +1,5 @@
 cite about-alias
-about-alias 'osx-specific aliases'
+about-alias 'OSX specific aliases'
 
 # Requires growlnotify, which can be found in the Growl DMG under "Extras"
 alias grnot='growlnotify -s -t Terminal -m "Done"'

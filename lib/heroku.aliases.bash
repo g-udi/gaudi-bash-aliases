@@ -1,5 +1,5 @@
 cite about-alias
-about-alias 'heroku task abbreviations'
+about-alias 'Heroku task abbreviations'
 
 alias h='heroku'
 alias hl='heroku list'

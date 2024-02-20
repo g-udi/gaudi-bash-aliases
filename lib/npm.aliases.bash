@@ -1,5 +1,5 @@
 cite about-alias
-about-alias 'common npm abbreviations'
+about-alias 'Common npm abbreviations'
 
 alias ni='npm install'
 alias nis='npm install --save'

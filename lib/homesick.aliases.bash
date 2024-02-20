@@ -1,5 +1,5 @@
 cite about-alias
-about-alias 'homesick aliases'
+about-alias 'Homesick aliases'
 
 alias sikhm="homesick cd dotfiles"
 alias sikclone="homesick clone"

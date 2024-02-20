@@ -1,5 +1,5 @@
 cite about-alias
-about-alias 'vagrant aliases'
+about-alias 'Vagrant aliases'
 
 # Aliases
 alias vhl='vagrant hosts list'

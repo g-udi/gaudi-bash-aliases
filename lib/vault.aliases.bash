@@ -1,5 +1,5 @@
 cite about-alias
-about-alias 'vault aliases'
+about-alias 'Vault aliases'
 
 # Aliases
 alias vad="vault delete"

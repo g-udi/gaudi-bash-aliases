@@ -1,5 +1,5 @@
 cite about-alias
-about-alias 'common git-svn abbreviations'
+about-alias 'Common git-svn abbreviations'
 
 alias gsr='git svn rebase'
 alias gsc='git svn dcommit'

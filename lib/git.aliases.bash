@@ -1,5 +1,5 @@
 cite about-alias
-about-alias 'common git abbreviations'
+about-alias 'Common git abbreviations'
 
 alias gcl='git clone'
 alias ga='git add'

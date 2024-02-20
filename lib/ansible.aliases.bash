@@ -1,5 +1,5 @@
 cite about-alias
-about-alias 'ansible abbreviations'
+about-alias 'Ansible abbreviations'
 
 alias ans=ansible
 alias ap=ansible-playbook
