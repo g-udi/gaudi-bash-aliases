@@ -15,7 +15,7 @@ This repo contains a submodule for [gaudi-bash](https://github.com/g-udi/gaudi-b
 - **[docker](/lib/docker.aliases.bash)**: Docker abbreviations/aliases
 - **[emacs](/lib/emacs.aliases.bash)**: Emacs editor
 - **[fuck](/lib/fuck.aliases.bash)**: fuck/please to retry last command with sudo
-- **[gaudi](/lib/gaudi.aliases.bash)**-bash: Aliases for the gaudi-bash command (these aliases are automatically included with the "general" aliases)
+- **[gaudi](/lib/gaudi-bash.aliases.bash)**-bash: Aliases for the gaudi-bash command (these aliases are automatically included with the "general" aliases)
 - **[general](/lib/general.aliases.bash)**: General aliases (files and directory listings ls, ll, etc.), navigation (cd, ..), etc. 
 - **[git](/lib/git.aliases.bash)**: Common git abbreviations
 - **[gitsvn](/lib/gitsvn.aliases.bash)**: Common git-svn abbreviations
