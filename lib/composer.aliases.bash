@@ -1,8 +1,6 @@
-# shellcheck shell=bash
 cite about-alias
 about-alias 'Common composer abbreviations'
 
-# Aliases
 alias coab='composer about'
 alias coar='composer archive'
 alias cob='composer browser'
