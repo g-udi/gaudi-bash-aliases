@@ -1,3 +1,5 @@
+# shellcheck shell=bash
+
 cite about-alias
 about-alias 'gls enhanced ls (port from Linux using coreutils)'
 

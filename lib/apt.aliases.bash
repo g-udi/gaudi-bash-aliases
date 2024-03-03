@@ -1,7 +1,8 @@
+# shellcheck shell=bash
+
 cite about-alias
 about-alias 'apt and dpkg aliases for Ubuntu and Debian distros.'
 
-# set apt aliases
 _set_pkg_aliases () {
 	if [[ -x "$(which apt)" ]]; then
 		alias apts='apt-cache search'

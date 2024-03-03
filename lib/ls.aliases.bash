@@ -1,3 +1,5 @@
+# shellcheck shell=bash
+
 cite about-alias
 about-alias 'ls aliases to add coloring and extra arguments'
 

@@ -1,3 +1,5 @@
+# shellcheck shell=bash
+
 cite about-alias
 about-alias 'Heroku task abbreviations'
 
@@ -11,7 +13,7 @@ alias hd='heroku dynos'
 alias hw='heroku workers'
 
 # rake console
-alias hr='heroku rake'
+alias hrr='heroku rake'
 alias hcon='heroku console'
 
 # new and restart

@@ -1,7 +1,8 @@
+# shellcheck shell=bash
+
 cite about-alias
 about-alias 'Ruby Bundler'
 
-# Bundler Commands
 alias be='bundle exec'
 alias bi='bundle install'
 alias bl='bundle list'

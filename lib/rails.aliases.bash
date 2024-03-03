@@ -1,3 +1,5 @@
+# shellcheck shell=bash
+
 cite about-alias
 about-alias 'Ruby Rails aliases'
 
@@ -11,7 +13,6 @@ alias rp='rails plugin'
 alias ra='rails application'
 alias rd='rails destroy'
 alias dbm='rake db:migrate'
-
 alias ss='script/server'
 alias ts="thin start"
 alias sc='script/console'

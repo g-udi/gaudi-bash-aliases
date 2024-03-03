@@ -1,3 +1,5 @@
+# shellcheck shell=bash
+
 cite about-alias
 about-alias 'Docker abbreviations/aliases'
 
@@ -25,21 +27,6 @@ case $OSTYPE in
     alias dkrmui='docker images -q -f dangling=true | xargs -r docker rmi'
     ;;
 esac
-
-if [[ ! -z "$(command ls "${GAUDI_BASH}/components/enabled/"{[0-9][0-9][0-9]${GAUDI_BASH_LOAD_PRIORITY_SEPARATOR}docker,docker}.plugin.bash 2>/dev/null | head -1)" ]]; then
-    # Delete most recent (i.e., last) Docker container
-    alias dkrmlc='docker-remove-most-recent-container'
-    # Delete all untagged images and exited containers
-    alias dkrmall='docker-remove-stale-assets'
-    # Delete most recent (i.e., last) Docker image
-    alias dkrmli='docker-remove-most-recent-image'
-    # Delete images for supplied IDs or all if no IDs are passed as arguments
-    alias dkrmi='docker-remove-images'
-    # Output a graph of image dependencies using Graphiz
-    alias dkideps='docker-image-dependencies'
-    # List environmental variables of the supplied image ID
-    alias dkre='docker-runtime-environment'
-fi
 
 # Enter last container (works with Docker 1.3 and above)
 alias dkelc='docker exec -it $(dklcid) bash --login'

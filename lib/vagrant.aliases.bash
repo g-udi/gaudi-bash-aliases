@@ -1,7 +1,8 @@
+# shellcheck shell=bash
+
 cite about-alias
 about-alias 'Vagrant aliases'
 
-# Aliases
 alias vhl='vagrant hosts list'
 alias vscp='vagrant scp'
 alias vsl='vagrant snapshot list'

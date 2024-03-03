@@ -1,7 +1,8 @@
+# shellcheck shell=bash
+
 cite about-alias
 about-alias 'Yarn package manager aliases'
 
-# Aliases
 alias ya='yarn'
 alias yai='yarn init'
 alias yaa='yarn add'

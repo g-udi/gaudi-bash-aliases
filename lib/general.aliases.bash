@@ -1,3 +1,5 @@
+# shellcheck shell=bash
+
 cite about-alias
 about-alias 'General aliases (files and directory listings ls, ll, etc.), navigation (cd, ..), etc. '
 

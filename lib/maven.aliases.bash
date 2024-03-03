@@ -1,5 +1,7 @@
+# shellcheck shell=bash
+
 cite about-alias
-about-alias 'mMven abbreviations'
+about-alias 'maven abbreviations'
 
 alias mci='mvn clean install'
 alias mi='mvn install'

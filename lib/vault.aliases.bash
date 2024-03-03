@@ -1,7 +1,8 @@
+# shellcheck shell=bash
+
 cite about-alias
 about-alias 'Vault aliases'
 
-# Aliases
 alias vad="vault delete"
 alias val="vault list"
 alias var="vault read"

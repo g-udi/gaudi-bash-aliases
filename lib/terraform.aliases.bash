@@ -1,4 +1,5 @@
 # shellcheck shell=bash
+
 cite about-alias
 about-alias 'Aliases for Terraform and Terragrunt'
 

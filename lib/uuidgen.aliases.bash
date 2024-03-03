@@ -1,3 +1,5 @@
+# shellcheck shell=bash
+
 cite 'uuid-alias'
 about-alias 'uuidgen aliases'
 
@@ -5,6 +7,7 @@ about-alias 'uuidgen aliases'
 if _command_exists uuid; then
   alias uuidu="uuid | tr '[:lower:]' '[:upper:]'"
   alias uuidl=uuid
+
 # macOS/BSD
 elif _command_exists uuidgen; then
   alias uuidu="uuidgen"

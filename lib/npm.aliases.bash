@@ -1,3 +1,5 @@
+# shellcheck shell=bash
+
 cite about-alias
 about-alias 'Common npm abbreviations'
 
@@ -19,7 +21,6 @@ alias nud='npm update'
 alias nr='npm run'
 alias nls='npm list --depth=0 2>/dev/null'
 alias nlsg='npm list -g --depth=0 2>/dev/null'
-
 alias nx='npx'
 alias nxplease='npx $(fc -ln -1)'
 alias nxn='npx --no-install '

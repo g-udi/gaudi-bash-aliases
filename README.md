@@ -2,6 +2,29 @@
 
 This repo contains a submodule for [gaudi-bash](https://github.com/g-udi/gaudi-bash) with all the aliases it loads.
 
+The alises can make use of the [helper functions](https://github.com/g-udi/gaudi-bash/blob/master/lib/helpers/utils.bash) of gaudi-bash:
+- `_is_function`: check if the passed parameter is a function
+- `_command_exists`: check if the command passed as the argument exists
+- `_binary_exists`: check if the binary passed as the argument exists
+- `_completion_exists`: check if the completion function passed as the argument exists
+- `_read_input`: reads input from the prompt for a yes/no (one character) input
+- `_array-contains`: searches an array for an exact match against the term passed as the first argument to the function. The function exits as soon as a match is found
+- `_array-dedupe`: creates a concatenated array of unique and sorted elements
+- `_clean-string`: cleans a string from whitespace given a passed cleaning mode
+
+## Checklist
+
+- [ ] Make sure to have `# shellcheck shell=bash` at the top of every file and have an empty newline after
+- [ ] Make sure to have the `cite about-alias`
+- [ ] Make sure to fill in a description of the alias in the `about-alias`
+
+ ```bash
+# shellcheck shell=bash
+
+cite about-alias
+about-alias 'Aliases for the gaudi-bash command (these aliases are automatically included with the "general" aliases)'
+ ```
+
 ## Aliases
 
 - **[ag](/lib/ag.aliases.bash)**: The Silver Searcher (ag) aliases
