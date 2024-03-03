@@ -58,7 +58,6 @@ about-alias 'Aliases for the gaudi-bash command (these aliases are automatically
 - **[svn](/lib/svn.aliases.bash)**: Common svn aliases
 - **[systemd](/lib/systemd.aliases.bash)**: systemd service aliases
 - **[terraform](/lib/terraform.aliases.bash)**: Aliases for Terraform and Terragrunt
-- **[terragrunt](/lib/terragrunt.aliases.bash)**: Aliases for Terraform and Terragrunt
 - **[textmate](/lib/textmate.aliases.bash)**: textmate aliases
 - **[tmux](/lib/tmux.aliases.bash)**: tmux terminal multiplexer aliases
 - **[uuidgen](/lib/uuidgen.aliases.bash)**: uuidgen aliases
