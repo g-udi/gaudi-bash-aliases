@@ -1,21 +1,23 @@
 # shellcheck shell=bash
-
 cite about-alias
-about-alias 'Aliases for Terraform and Terragrunt'
+about-alias 'Aliases for Terraform/OpenTofu and Terragrunt'
 
-alias tf='terraform'
-alias tfi='tf init'
-alias tfv='terraform validate'
-alias tfp='terraform plan'
-alias tfa='terraform apply'
-alias tfd='terraform destroy'
-alias tfw='terraform workspace'
-alias tg='terragrunt'
-alias tgv='terragrunt validate'
-alias tgp='terragrunt plan'
-alias tga='terragrunt apply'
-alias tgd='terragrunt destroy'
-alias tgva='terragrunt validate-all'
-alias tgpa='terragrunt plan-all'
-alias tgaa='terragrunt apply-all'
-alias tgda='terragrunt destroy-all'
+if _command_exists terraform; then
+	alias tf='terraform'
+elif _command_exists tofu; then
+	alias tf='tofu'
+fi
+
+if _command_exists tf; then
+	alias tfa='tf apply'
+	alias tfp='tf plan'
+	alias tfd='tf destroy'
+	alias tfv='tf validate'
+	alias tfi='tf init'
+	alias tfo='tf output'
+	alias tfr='tf refresh'
+	alias tfw='tf workspace'
+	alias tfae='tf apply -auto-approve'
+	alias tfpa='tf plan -out=tfplan && tf apply tfplan'
+	alias tfpaf='tf plan -out=tfplan && tf apply -auto-approve tfplan'
+fi
