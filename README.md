@@ -2,7 +2,7 @@
 
 This repo contains a submodule for [gaudi-bash](https://github.com/g-udi/gaudi-bash) with all the aliases it loads.
 
-The alises can make use of the [helper functions](https://github.com/g-udi/gaudi-bash/blob/master/lib/helpers/utils.bash) of gaudi-bash:
+The aliases can make use of the [helper functions](https://github.com/g-udi/gaudi-bash/blob/master/lib/helpers/utils.bash) of gaudi-bash:
 - `_is_function`: check if the passed parameter is a function
 - `_command_exists`: check if the command passed as the argument exists
 - `_binary_exists`: check if the binary passed as the argument exists
@@ -34,7 +34,8 @@ about-alias 'Aliases for the gaudi-bash command (these aliases are automatically
 - **[clipboard](/lib/clipboard.aliases.bash)**: pbcopy and pbpaste shortcuts to linux
 - **[composer](/lib/composer.aliases.bash)**: Common composer abbreviations
 - **[curl](/lib/curl.aliases.bash)**: Curl aliases for convenience.
-- **[docker](/lib/docker.aliases.bash)**-compose: docker-compose abbreviations
+- **[directory](/lib/directory.aliases.bash)**: Shortcuts for directory commands: ls, cd, &c.
+- **[docker-compose](/lib/docker-compose.aliases.bash)**: docker-compose abbreviations
 - **[docker](/lib/docker.aliases.bash)**: Docker abbreviations/aliases
 - **[emacs](/lib/emacs.aliases.bash)**: Emacs editor
 - **[fuck](/lib/fuck.aliases.bash)**: fuck/please to retry last command with sudo
