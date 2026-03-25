@@ -116,7 +116,7 @@ alias gswc="git switch --create"
 alias gswt="git switch --track"
 # Git home
 alias ghm='cd "$(git rev-parse --show-toplevel)"'
-if ! _command_exists gh; then
+if ! _binary_exists gh; then
   alias gh='ghm'
 fi
 # Show untracked files
