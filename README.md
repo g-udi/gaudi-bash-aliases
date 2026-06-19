@@ -40,7 +40,7 @@ about-alias 'Aliases for the gaudi-bash command (these aliases are automatically
 - **[emacs](/lib/emacs.aliases.bash)**: Emacs editor
 - **[fuck](/lib/fuck.aliases.bash)**: fuck/please to retry last command with sudo
 - **[gaudi](/lib/gaudi-bash.aliases.bash)**-bash: Aliases for the gaudi-bash command (these aliases are automatically included with the "general" aliases)
-- **[general](/lib/general.aliases.bash)**: General aliases (files and directory listings ls, ll, etc.), navigation (cd, ..), etc. 
+- **[general](/lib/general.aliases.bash)**: General aliases (files and directory listings ls, ll, etc.), navigation (cd, ..), etc.
 - **[git](/lib/git.aliases.bash)**: Common git abbreviations
 - **[gitsvn](/lib/gitsvn.aliases.bash)**: Common git-svn abbreviations
 - **[gls](/lib/gls.aliases.bash)**: gls enhanced ls (port from Linux using coreutils)
@@ -50,7 +50,7 @@ about-alias 'Aliases for the gaudi-bash command (these aliases are automatically
 - **[homesick](/lib/homesick.aliases.bash)**: Homesick aliases
 - **[kubectl](/lib/kubectl.aliases.bash)**: kubectl aliases
 - **[ls](/lib/ls.aliases.bash)**: ls aliases to add coloring and extra arguments
-- **[maven](/lib/maven.aliases.bash)**: mMven abbreviations
+- **[maven](/lib/maven.aliases.bash)**: Maven abbreviations
 - **[node](/lib/node.aliases.bash)**: Node.js environment aliases
 - **[npm](/lib/npm.aliases.bash)**: Common npm abbreviations
 - **[osx](/lib/osx.aliases.bash)**: OSX specific aliases
