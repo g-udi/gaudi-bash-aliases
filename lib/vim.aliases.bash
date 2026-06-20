@@ -3,18 +3,25 @@
 cite about-alias
 about-alias 'vim abbreviations'
 
-VIM=$(command -v vim)
-GVIM=$(command -v gvim)
-MVIM=$(command -v mvim)
+VIM=$(command -v vim || true)
+GVIM=$(command -v gvim || true)
+MVIM=$(command -v mvim || true)
 
-[[ -n $VIM ]] && alias v="\$VIM"
+if [[ -n $VIM ]]; then
+  v () { command vim "$@"; }
+fi
 
 # open vim in new tab is taken from http://stackoverflow.com/questions/936501/let-gvim-always-run-a-single-instancek
 case $OSTYPE in
   darwin*)
-	[[ -n $MVIM ]] && mvimt () { command mvim --remote-tab-silent "$@" || command mvim "$@"; }
+    if [[ -n $MVIM ]]; then
+      mvimt () { command mvim --remote-tab-silent "$@" || command mvim "$@"; }
+    fi
     ;;
   *)
-    [[ -n $GVIM ]] && gvimt () { command gvim --remote-tab-silent "$@" || command gvim "$@"; }
+    if [[ -n $GVIM ]]; then
+      gvimt () { command gvim --remote-tab-silent "$@" || command gvim "$@"; }
+    fi
     ;;
 esac
+unset VIM GVIM MVIM
