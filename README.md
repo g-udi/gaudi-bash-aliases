@@ -22,7 +22,7 @@ The aliases can make use of the [helper functions](https://github.com/g-udi/gaud
 # shellcheck shell=bash
 
 cite about-alias
-about-alias 'Aliases for the gaudi-bash command (these aliases are automatically included with the "general" aliases)'
+about-alias 'The Silver Searcher (ag) aliases'
  ```
 
 ## Aliases
@@ -39,7 +39,7 @@ about-alias 'Aliases for the gaudi-bash command (these aliases are automatically
 - **[docker](/lib/docker.aliases.bash)**: Docker abbreviations/aliases
 - **[emacs](/lib/emacs.aliases.bash)**: Emacs editor
 - **[fuck](/lib/fuck.aliases.bash)**: fuck/please to retry last command with sudo
-- **[gaudi](/lib/gaudi-bash.aliases.bash)**-bash: Aliases for the gaudi-bash command (these aliases are automatically included with the "general" aliases)
+- **[gaudi-bash](/lib/gaudi-bash.aliases.bash)**: Aliases for common misspellings of the `gbash` command (`gbsh`, `gbahs`)
 - **[general](/lib/general.aliases.bash)**: General aliases (files and directory listings ls, ll, etc.), navigation (cd, ..), etc.
 - **[git](/lib/git.aliases.bash)**: Common git abbreviations
 - **[gitsvn](/lib/gitsvn.aliases.bash)**: Common git-svn abbreviations
@@ -58,7 +58,7 @@ about-alias 'Aliases for the gaudi-bash command (these aliases are automatically
 - **[rails](/lib/rails.aliases.bash)**: Ruby Rails aliases
 - **[svn](/lib/svn.aliases.bash)**: Common svn aliases
 - **[systemd](/lib/systemd.aliases.bash)**: systemd service aliases
-- **[terraform](/lib/terraform.aliases.bash)**: Aliases for Terraform and Terragrunt
+- **[terraform](/lib/terraform.aliases.bash)**: Aliases for Terraform/OpenTofu and Terragrunt
 - **[textmate](/lib/textmate.aliases.bash)**: textmate aliases
 - **[tmux](/lib/tmux.aliases.bash)**: tmux terminal multiplexer aliases
 - **[uuidgen](/lib/uuidgen.aliases.bash)**: uuidgen aliases
