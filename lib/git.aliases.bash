@@ -29,11 +29,13 @@ alias gall='git add -A'
 alias gus='git reset HEAD'
 alias gpristine='git reset --hard && git clean -dfx'
 alias gclean='git clean -fd'
-alias gm="git merge"
+# gm (GraphicsMagick) and gs (Ghostscript) are real tools: alias them only when
+# no such binary is installed
+hash gm 2> /dev/null || alias gm="git merge"
 alias gmv='git mv'
 alias g='git'
 alias get='git'
-alias gs='git status'
+hash gs 2> /dev/null || alias gs='git status'
 alias gss='git status -s'
 alias gsu='git submodule update --init --recursive'
 
@@ -140,11 +142,9 @@ fi
 # Show untracked files
 alias gu='git ls-files . --exclude-standard --others'
 
-case $OSTYPE in
-  darwin*)
-    alias gtls="git tag -l | gsort -V"
-    ;;
-  *)
-    alias gtls='git tag -l | sort -V'
-    ;;
-esac
+# List tags in version order: GNU sort (gsort) when installed, else sort -V
+if hash gsort 2> /dev/null; then
+  alias gtls="git tag -l | gsort -V"
+else
+  alias gtls='git tag -l | sort -V'
+fi

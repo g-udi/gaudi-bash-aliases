@@ -35,12 +35,12 @@ about-alias 'The Silver Searcher (ag) aliases'
 - **[composer](/lib/composer.aliases.bash)**: Common composer abbreviations
 - **[curl](/lib/curl.aliases.bash)**: Curl aliases for convenience.
 - **[directory](/lib/directory.aliases.bash)**: Shortcuts for directory commands: ls, cd, &c.
-- **[docker-compose](/lib/docker-compose.aliases.bash)**: docker-compose abbreviations
+- **[docker-compose](/lib/docker-compose.aliases.bash)**: docker compose abbreviations
 - **[docker](/lib/docker.aliases.bash)**: Docker abbreviations/aliases
 - **[emacs](/lib/emacs.aliases.bash)**: Emacs editor
 - **[fuck](/lib/fuck.aliases.bash)**: fuck/please to retry last command with sudo
 - **[gaudi-bash](/lib/gaudi-bash.aliases.bash)**: Aliases for common misspellings of the `gbash` command (`gbsh`, `gbahs`)
-- **[general](/lib/general.aliases.bash)**: General aliases (files and directory listings ls, ll, etc.), navigation (cd, ..), etc.
+- **[general](/lib/general.aliases.bash)**: General aliases: sudo, grep, navigation (cd, ..), directory creation, history, etc.
 - **[git](/lib/git.aliases.bash)**: Common git abbreviations
 - **[gitsvn](/lib/gitsvn.aliases.bash)**: Common git-svn abbreviations
 - **[gls](/lib/gls.aliases.bash)**: gls enhanced ls (port from Linux using coreutils)
@@ -58,7 +58,7 @@ about-alias 'The Silver Searcher (ag) aliases'
 - **[rails](/lib/rails.aliases.bash)**: Ruby Rails aliases
 - **[svn](/lib/svn.aliases.bash)**: Common svn aliases
 - **[systemd](/lib/systemd.aliases.bash)**: systemd service aliases
-- **[terraform](/lib/terraform.aliases.bash)**: Aliases for Terraform/OpenTofu and Terragrunt
+- **[terraform](/lib/terraform.aliases.bash)**: Aliases for Terraform/OpenTofu
 - **[textmate](/lib/textmate.aliases.bash)**: textmate aliases
 - **[tmux](/lib/tmux.aliases.bash)**: tmux terminal multiplexer aliases
 - **[uuidgen](/lib/uuidgen.aliases.bash)**: uuidgen aliases
