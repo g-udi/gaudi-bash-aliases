@@ -13,7 +13,7 @@ elif command ls -G -d . &> /dev/null; then
   alias ls='command ls -G'
   alias ll='ls -lFG'
   alias la='ls -laFG'
-  alias lsd="command ls -G -lF | grep -G=never '^d'"
+  alias lsd="command ls -G -lF | grep --color=never '^d'"
   alias llt='ls -lFtG'
 else
   alias ls='command ls'
