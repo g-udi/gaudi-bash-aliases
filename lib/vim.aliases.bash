@@ -9,7 +9,7 @@ _gaudi_gvim=$(command -v gvim || true)
 _gaudi_mvim=$(command -v mvim || true)
 
 if [[ -n $_gaudi_vim ]]; then
-  v () { command vim "$@"; }
+  alias v="command vim"
 fi
 
 # open vim in new tab is taken from http://stackoverflow.com/questions/936501/let-gvim-always-run-a-single-instancek

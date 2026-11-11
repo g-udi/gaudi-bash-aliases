@@ -23,36 +23,39 @@ _git_default_branch() {
 
 alias gcl='git clone'
 alias ga='git add'
+alias gaa='git add --all'
 alias grrm='git rm'
 alias gap='git add -p'
 alias gall='git add -A'
 alias gus='git reset HEAD'
 alias gpristine='git reset --hard && git clean -dfx'
 alias gclean='git clean -fd'
-# gm (GraphicsMagick) and gs (Ghostscript) are real tools: alias them only when
-# no such binary is installed
+# gm (GraphicsMagick), gs (Ghostscript) and the GNU coreutils installed with a
+# g prefix (gcp, gmv, gpr, grm, gwc) are real tools: alias them only when no
+# such binary is installed
 hash gm 2> /dev/null || alias gm="git merge"
-alias gmv='git mv'
-alias g='git'
+hash gmv 2> /dev/null || alias gmv='git mv'
+# g may already be the framework's own short alias: only take it when it is free
+alias g > /dev/null 2>&1 || alias g='git'
 alias get='git'
 hash gs 2> /dev/null || alias gs='git status'
-alias gss='git status -s'
+alias gss='git status --short'
 alias gsu='git submodule update --init --recursive'
 
-alias gf='git fetch --all --prune'
+alias gf='git fetch'
 alias gft='git fetch --all --prune --tags'
 alias gfv='git fetch --all --prune --verbose'
 alias gftv='git fetch --all --prune --tags --verbose'
 
-alias gl='git pull'
+alias gpu='git pull'
+alias gpur='git pull --rebase'
 alias glum='git pull upstream "$(_git_default_branch)"'
-alias gpr='git pull --rebase'
+hash gpr 2> /dev/null || alias gpr='git pull --rebase'
 alias gpp='git pull && git push'
 alias gup='git fetch && git rebase'
 
 alias gp='git push'
 alias gpo='git push origin HEAD'
-alias gpu='git push --set-upstream'
 alias gpuo='git push --set-upstream origin'
 alias gpuoc='git push --set-upstream origin $(git symbolic-ref --short HEAD)'
 alias gpom='git push origin "$(_git_default_branch)"'
@@ -61,15 +64,15 @@ alias gr='git remote'
 alias grv='git remote -v'
 alias gra='git remote add'
 alias grb='git rebase'
-alias grm='git rebase "$(_git_default_branch)"'
+hash grm 2> /dev/null || alias grm='git rebase "$(_git_default_branch)"'
 alias grmi='git rebase "$(_git_default_branch)" -i'
 alias gd='git diff'
 alias gds='git diff --staged'
 alias gdt='git difftool'
 
-alias gc='git commit -v'
+alias gc='git commit'
 alias gca='git commit -v -a'
-alias gcm='git commit -v -m'
+alias gcm='git commit -m'
 alias gcam="git commit -v -am"
 alias gci='git commit --interactive'
 alias gcamd='git commit --amend'
@@ -81,23 +84,26 @@ alias gbm='git branch -m'
 alias gbd='git branch -d'
 alias gbD='git branch -D'
 alias gcount='git shortlog -sn'
-alias gcp='git cherry-pick'
+hash gcp 2> /dev/null || alias gcp='git cherry-pick'
 alias gcpx='git cherry-pick -x'
 alias gco='git checkout'
 alias gcom='git checkout "$(_git_default_branch)"'
 alias gcb='git checkout -b'
 alias gcob='git checkout -b'
+alias gcb='git checkout -b'
 alias gct='git checkout --track'
 alias gcpd='git checkout "$(_git_default_branch)"; git pull; git branch -D'
 alias gexport='git archive --format zip --output'
 alias gdel='git branch -D'
 alias gmu='git fetch origin -v; git fetch upstream -v; git merge "upstream/$(_git_default_branch)"'
+alias gl='git log --oneline'
+alias gla='git log --oneline --all --graph'
 alias gll='git log --graph --pretty=oneline --abbrev-commit'
 alias gg="git log --graph --pretty=format:'%C(bold)%h%Creset%C(magenta)%d%Creset %s %C(yellow)<%an> %C(cyan)(%cr)%Creset' --abbrev-commit --date=relative"
 alias ggs="gg --stat"
 alias gsh="git show"
 alias gsl="git shortlog -sn"
-alias gwc="git whatchanged"
+hash gwc 2> /dev/null || alias gwc="git whatchanged"
 alias gt="git tag"
 alias gta="git tag -a"
 alias gtd="git tag -d"
