@@ -3,6 +3,24 @@
 cite about-alias
 about-alias 'Common git abbreviations'
 
+# Print the repository's default branch: origin/HEAD when set, otherwise the
+# first of main/master that exists locally or on origin (falls back to master)
+_git_default_branch() {
+  local ref branch
+  if ref=$(git symbolic-ref --quiet --short refs/remotes/origin/HEAD 2> /dev/null); then
+    echo "${ref#origin/}"
+    return 0
+  fi
+  for branch in main master; do
+    if git show-ref --verify --quiet "refs/heads/${branch}" \
+      || git show-ref --verify --quiet "refs/remotes/origin/${branch}"; then
+      echo "$branch"
+      return 0
+    fi
+  done
+  echo master
+}
+
 alias gcl='git clone'
 alias ga='git add'
 alias grrm='git rm'
@@ -25,7 +43,7 @@ alias gfv='git fetch --all --prune --verbose'
 alias gftv='git fetch --all --prune --tags --verbose'
 
 alias gl='git pull'
-alias glum='git pull upstream master'
+alias glum='git pull upstream "$(_git_default_branch)"'
 alias gpr='git pull --rebase'
 alias gpp='git pull && git push'
 alias gup='git fetch && git rebase'
@@ -35,14 +53,14 @@ alias gpo='git push origin HEAD'
 alias gpu='git push --set-upstream'
 alias gpuo='git push --set-upstream origin'
 alias gpuoc='git push --set-upstream origin $(git symbolic-ref --short HEAD)'
-alias gpom='git push origin master'
+alias gpom='git push origin "$(_git_default_branch)"'
 
 alias gr='git remote'
 alias grv='git remote -v'
 alias gra='git remote add'
 alias grb='git rebase'
-alias grm='git rebase master'
-alias grmi='git rebase master -i'
+alias grm='git rebase "$(_git_default_branch)"'
+alias grmi='git rebase "$(_git_default_branch)" -i'
 alias gd='git diff'
 alias gds='git diff --staged'
 alias gdt='git difftool'
@@ -64,14 +82,14 @@ alias gcount='git shortlog -sn'
 alias gcp='git cherry-pick'
 alias gcpx='git cherry-pick -x'
 alias gco='git checkout'
-alias gcom='git checkout master'
+alias gcom='git checkout "$(_git_default_branch)"'
 alias gcb='git checkout -b'
 alias gcob='git checkout -b'
 alias gct='git checkout --track'
-alias gcpd='git checkout master; git pull; git branch -D'
+alias gcpd='git checkout "$(_git_default_branch)"; git pull; git branch -D'
 alias gexport='git archive --format zip --output'
 alias gdel='git branch -D'
-alias gmu='git fetch origin -v; git fetch upstream -v; git merge upstream/master'
+alias gmu='git fetch origin -v; git fetch upstream -v; git merge "upstream/$(_git_default_branch)"'
 alias gll='git log --graph --pretty=oneline --abbrev-commit'
 alias gg="git log --graph --pretty=format:'%C(bold)%h%Creset%C(magenta)%d%Creset %s %C(yellow)<%an> %C(cyan)(%cr)%Creset' --abbrev-commit --date=relative"
 alias ggs="gg --stat"
@@ -88,8 +106,8 @@ alias gpatch="git format-patch -1"
 alias gnew="git log HEAD@{1}..HEAD@{0}"
 # Add uncommitted and unstaged changes to the last commit
 alias gcaa="git commit -a --amend -C HEAD"
-# Rebase with latest remote master
-alias gprom="git fetch origin master && git rebase origin/master && git update-ref refs/heads/master origin/master"
+# Rebase with latest remote default branch
+alias gprom='git fetch origin "$(_git_default_branch)" && git rebase "origin/$(_git_default_branch)" && git update-ref "refs/heads/$(_git_default_branch)" "origin/$(_git_default_branch)"'
 alias gpunch="git push --force-with-lease"
 alias ggui="git gui"
 alias gcsam="git commit -S -am"
@@ -111,7 +129,7 @@ alias gstpo="git stash pop"
 alias gstp="git stash pop"
 # Switch aliases - Requires git v2.23+
 alias gsw="git switch"
-alias gswm="git switch master"
+alias gswm='git switch "$(_git_default_branch)"'
 alias gswc="git switch --create"
 alias gswt="git switch --track"
 # Git home
