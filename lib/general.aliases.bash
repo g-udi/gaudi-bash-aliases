@@ -1,7 +1,7 @@
 # shellcheck shell=bash
 
 cite about-alias
-about-alias 'General aliases (files and directory listings ls, ll, etc.), navigation (cd, ..), etc. '
+about-alias 'General aliases: sudo, grep, navigation (cd, ..), directory creation, history, etc.'
 
 # sudo powers
 alias _="sudo"
@@ -10,10 +10,8 @@ alias _="sudo"
 alias count='ls -1 | grep -c "^.*$"'
 
 # colored grep
-# Need to check an existing file for a pattern that will be found to ensure
-# that the check works when on an OS that supports the color option
-if grep --color=auto "a" "${BASH_IT:-${GAUDI_BASH:-.}}/"*.md &> /dev/null
-then
+# Only when this grep supports the color option
+if echo a | grep --color=auto a &> /dev/null; then
   alias grep='grep --color=auto'
 fi
 
