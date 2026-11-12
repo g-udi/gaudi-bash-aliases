@@ -1,11 +1,12 @@
 # shellcheck shell=bash
+
 cite about-alias
-about-alias 'common composer abbreviations'
+about-alias 'Common composer abbreviations'
 
 # Aliases
 alias coab='composer about'
 alias coar='composer archive'
-alias cob='composer browser'
+alias cob='composer browse'
 alias cocpr='composer check-platform-reqs'
 alias cocc='composer clear-cache'
 alias cocfg='composer config'

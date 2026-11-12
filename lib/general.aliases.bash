@@ -1,7 +1,7 @@
 # shellcheck shell=bash
 
 cite about-alias
-about-alias 'General aliases for navigation and common tasks'
+about-alias 'General aliases: sudo, grep, navigation (cd, ..), directory creation, history, etc.'
 
 # sudo powers
 alias _="sudo"

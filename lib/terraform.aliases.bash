@@ -1,11 +1,12 @@
 # shellcheck shell=bash
+
 cite about-alias
 about-alias 'Aliases for Terraform/OpenTofu'
 
-if _command_exists terraform; then
+if _binary_exists terraform; then
 	_gaudi_terraform_command=terraform
 	alias tf='terraform'
-elif _command_exists tofu; then
+elif _binary_exists tofu; then
 	_gaudi_terraform_command=tofu
 	alias tf='tofu'
 fi

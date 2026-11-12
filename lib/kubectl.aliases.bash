@@ -4,7 +4,7 @@ cite about-alias
 about-alias 'kubectl aliases'
 
 _set_kubectl_aliases () {
-  if _command_exists kubectl; then
+  if _binary_exists kubectl; then
     alias kc='kubectl'
     alias kcgp='kubectl get pods'
     alias kcgd='kubectl get deployments'

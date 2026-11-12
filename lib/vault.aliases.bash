@@ -6,8 +6,9 @@ about-alias 'Vault aliases'
 alias vad="vault delete"
 alias val="vault list"
 alias var="vault read"
-alias varn="vault renew"
-alias varev="vault revoke"
+# Leases: `vault renew` and `vault revoke` became `vault lease renew|revoke`
+alias varn="vault lease renew"
+alias varev="vault lease revoke"
 alias vasrv="vault server"
 alias vas="vault status"
 alias vav="vault version"
