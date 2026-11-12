@@ -90,7 +90,6 @@ alias gco='git checkout'
 alias gcom='git checkout "$(_git_default_branch)"'
 alias gcb='git checkout -b'
 alias gcob='git checkout -b'
-alias gcb='git checkout -b'
 alias gct='git checkout --track'
 alias gcpd='git checkout "$(_git_default_branch)"; git pull; git branch -D'
 alias gexport='git archive --format zip --output'
@@ -103,7 +102,8 @@ alias gg="git log --graph --pretty=format:'%C(bold)%h%Creset%C(magenta)%d%Creset
 alias ggs="gg --stat"
 alias gsh="git show"
 alias gsl="git shortlog -sn"
-hash gwc 2> /dev/null || alias gwc="git whatchanged"
+# What `git whatchanged` printed: git itself now refuses to run that command
+hash gwc 2> /dev/null || alias gwc="git log --raw --no-merges"
 alias gt="git tag"
 alias gta="git tag -a"
 alias gtd="git tag -d"

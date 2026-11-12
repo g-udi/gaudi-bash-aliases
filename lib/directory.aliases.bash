@@ -1,4 +1,5 @@
 # shellcheck shell=bash
+
 cite about-alias
 about-alias 'Shortcuts for directory commands: ls, cd, &c.'
 
